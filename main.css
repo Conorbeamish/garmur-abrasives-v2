@@ -1,0 +1,24 @@
+body{
+    font-family: 'Heebo', sans-serif !important;
+}
+
+.brand-color{
+    color: #f78f1e;
+}
+
+nav {
+    background-color: transparent;
+}
+
+.nav-logo{
+    height: 2rem;
+}
+
+.nav-btn{
+    border: none;
+}
+
+.nav-btn:focus{
+    outline: none;
+    border: none;
+}
