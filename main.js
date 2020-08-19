@@ -1,12 +1,12 @@
 $( document ).ready(function() {
 
-    // //Changes nav color on scroll 
-    // $(function () {
-    //   $(document).scroll(function () {
-    //     var $nav = $(".fixed-top");
-    //     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-    //   });
-    // });
+    //Changes nav color on scroll 
+    $(function () {
+      $(document).scroll(function () {
+        var $nav = $(".fixed-top");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+      });
+    });
     
     //Close navbar when clicked off
     $(document).click(function (event) {

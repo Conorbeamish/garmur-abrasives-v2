@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Heebo', sans-serif !important;
 }
@@ -6,8 +10,25 @@ body{
     color: #f78f1e;
 }
 
+.brand-color-link{
+    color: #f78f1e;
+}
+
+.brand-color-link:hover{
+    color: rgba(247, 143, 30, 0.5);
+}
+
+.brand-color-link:focus{
+    color: rgba(247, 143, 30, 0.5);
+}
+
+.brand-color-opposite{
+    color:#0d2f5c;
+}
+
 nav {
     background-color: transparent;
+    transition: background-color 200ms linear;
 }
 
 .nav-logo{
@@ -18,7 +39,59 @@ nav {
     border: none;
 }
 
+.nav-item{
+    text-align: right;
+    
+}
+
+.nav-link {
+    color: white !important;
+}
+
+
+.nav-link:hover {
+    color: rgba(255,255,255,.5) !important;
+}
+
 .nav-btn:focus{
     outline: none;
     border: none;
 }
+
+.scrolled{
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 200ms linear;
+}
+
+.white-link {
+    color: white;
+    text-decoration: none;
+}
+
+.white-link:hover, .white-link:focus {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+.landing{
+    min-height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),  url(./images/sparks.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.about{
+    min-height: 100vh;
+    background-color: #e9ebee;
+}
+
+.landing-logo{
+    height: 3rem;
+}
+
+footer{
+    background-color: #0d2f5c;
+    color: white;
+}
+
