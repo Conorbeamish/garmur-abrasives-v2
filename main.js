@@ -36,4 +36,30 @@ $( document ).ready(function() {
     //       $(this).animate({"opacity":"1"}, 1000);
     //     }
     // })
+
+     //Handle form submit
+     $("#form").submit(function(event){
+      var data = {
+          name: $("#name").val(),
+          number: $("#number").val(),
+          email: $("#email").val(),
+          company: $("#company").val(),
+          enquiry: $("#enquiry").val()
+      }
+      $("form-error").addClass("hidden");
+      $.ajax({
+          url: "https://formspree.io/f/mgepopwo",
+          method: "POST",
+          dataType: "json",
+          data: data,
+          success: function(){
+              $("#form-button").addClass("hidden");
+              $("#form-success").removeClass("hidden");
+          },
+          error: function(){
+              $("#form-error").removeClass("hidden");
+          }
+      })
+      event.preventDefault();
+  })
   });

@@ -4,6 +4,17 @@ html {
 
 body{
     font-family: 'Heebo', sans-serif !important;
+    background-color: #e9ebee;
+}
+
+a{
+    text-decoration: none;
+    color: #212529;
+}
+
+a:hover{
+    color: #f78f1e;
+    text-decoration: none;
 }
 
 .brand-color{
@@ -58,9 +69,17 @@ nav {
     border: none;
 }
 
+.hidden{
+    display: none;
+}
+
 .scrolled{
     background-color: rgba(0, 0, 0, 0.5);
     transition: background-color 200ms linear;
+}
+
+.bg-white{
+    background-color: white;
 }
 
 .white-link {
@@ -83,12 +102,26 @@ nav {
 
 .about{
     min-height: 100vh;
-    background-color: #e9ebee;
+    
+}
+
+.supplier-logos{
+    max-width: 100%;
 }
 
 .landing-logo{
     height: 3rem;
 }
+
+.contact{
+    min-height: 50vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),  url(./images/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
 
 footer{
     background-color: #0d2f5c;
