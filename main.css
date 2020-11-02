@@ -78,6 +78,10 @@ nav {
     transition: background-color 200ms linear;
 }
 
+.image-divider{
+    width: 100%;
+}
+
 .bg-white{
     background-color: white;
 }
@@ -116,6 +120,15 @@ nav {
 .contact{
     min-height: 50vh;
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),  url(./images/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.products{
+    min-height: 50vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),  url(./images/products.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

@@ -16,6 +16,9 @@ $( document ).ready(function() {
           $(".navbar-toggler").click();
       }
     });
+
+    //Dynamic Copyright Date
+    $("#year").text(new Date().getFullYear());
     
     // //Elements appear on scroll
     // $(window).scroll(function(){
