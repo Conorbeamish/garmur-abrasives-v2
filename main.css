@@ -59,7 +59,6 @@ nav {
     color: white !important;
 }
 
-
 .nav-link:hover {
     color: rgba(255,255,255,.5) !important;
 }
@@ -104,6 +103,26 @@ nav {
     color: white;
 }
 
+.landing-fixed-background{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./images//landing-cover.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    color: white;
+}
+
+.landing-fixed-background2{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) ), url('./images//landing-cover2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    color: white;
+}
+
 .about{
     min-height: 100vh;
     
@@ -135,6 +154,22 @@ nav {
     color: white;
 }
 
+.product-image{
+    padding: 1rem;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-hr{
+    height: 2px;
+    width: 80%;
+    color: black;
+
+}
 
 footer{
     background-color: #0d2f5c;
